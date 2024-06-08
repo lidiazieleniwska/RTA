@@ -7,9 +7,9 @@ WORKDIR /app
 COPY . /app
 
 # instalacja
-RUN pip install --no-cache-dir -r wymagania.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-EXPOSE 80
+EXPOSE 8000
 
 ENV NAME Perceptron
-CMD ["python", "perceptron.py"]
+CMD ["python", "app.py"]
